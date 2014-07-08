@@ -1,0 +1,73 @@
+<html>
+<head>
+<script>
+function validateform(){
+var x=document.forms['form1']['email'].value;
+if(x == null || x == ""){
+	alert("email and password cannot be blank");
+	return false;
+}
+
+}
+
+
+function register(){
+	var a=document.forms['form2']['emailid'].value;
+	if(x == null || x == ""){
+		alert("email cannot be BLANK");
+		return false;
+	}
+}
+
+
+</script>
+
+
+
+
+
+	</head>
+
+
+<body style="background-color:#6A5ACD;">
+
+<br>
+<div id="header" style="width:1100;height:150">
+<div id="sitename" style="float:left;"><b style="box-shadow:25px 25px 25px black;font-size:42px;color:white;">Social Network</b></div>
+
+<form action="3.php" name="form1" onsubmit="return validateform()" method="post">
+<b style="box-shadow:25px 25px 25px black;font-size:25px;color:white;margin-left:477">Email Id</b>
+<input type="text" name="email" style="margin-left:35;box-shadow:11px 11px 11px black;;color:black;"><br><br>
+
+<b style="box-shadow:25px 25px 25px black;font-size:25px;color:white;margin-left:747">Password</b>
+<input type="password" name="pass" style="margin-left:31;box-shadow:11px 11px 11px black;;color:black;"><br><br>
+<input type="submit" name="submit" value="submit" style="margin-left:888;box-shadow:11px 11px 11px black;;color:black;">
+</form>
+
+
+
+
+</div>
+
+<div id="mid" style="width:1350;height:350;background-color:white;">
+<br><br><br>
+<form action="2.php" name="form2" onsubmit="return register()">
+	<b style="font-size:25px;color:black;margin-left:777">Email Id</b>
+	<input type="text" name="emailid" style="margin-left:35;color:black;"><br><br>
+<b style="font-size:25px;color:black;margin-left:777">Password</b>
+<input type="password" name="pass1" style="margin-left:26;color:black;"><br><br>
+<b style="font-size:25px;color:black;margin-left:777">Mobile No.</b>
+<input type="password" name="mobi" style="margin-left:15;color:black;"><br><br>
+
+<input type="submit" name="submit" value="submit" style="margin-left:915;box-shadow:11px 11px 11px black;;color:black;">
+</form>
+</div>
+
+
+</body>
+
+
+
+
+
+</html>
